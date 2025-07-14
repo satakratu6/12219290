@@ -22,7 +22,7 @@ const RedirectPage = ({ token }) => {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '60vh' }}>
-      <Paper elevation={3} sx={{ p: 4, textAlign: 'center' }}>
+      <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, textAlign: 'center', width: '100%', maxWidth: 400, boxSizing: 'border-box' }}>
         <CircularProgress color="primary" sx={{ mb: 2 }} />
         <Typography variant="h6" sx={{ fontWeight: 500 }}>
           Redirecting you to your destination...

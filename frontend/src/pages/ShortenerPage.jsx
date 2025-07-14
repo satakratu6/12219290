@@ -45,7 +45,7 @@ const ShortenerPage = ({ token }) => {
       <Typography variant="h4" gutterBottom sx={{ fontWeight: 700, mt: 2, mb: 3, textAlign: 'center' }}>
         URL Shortener
       </Typography>
-      <Paper elevation={3} sx={{ p: 4, width: '100%', maxWidth: 900 }}>
+      <Paper elevation={3} sx={{ p: { xs: 2, md: 4 }, width: '100%', maxWidth: 900, boxSizing: 'border-box' }}>
         <Grid container spacing={3} justifyContent="center">
           {urls.map((url, i) => (
             <Grid item xs={12} key={i}>
@@ -99,7 +99,7 @@ const ShortenerPage = ({ token }) => {
           </Grid>
           {results.length > 0 && (
             <Grid item xs={12}>
-              <TableContainer component={Paper} sx={{ mt: 4 }}>
+              <TableContainer component={Paper} sx={{ mt: 4, overflowX: 'auto', width: '100%' }}>
                 <Table>
                   <TableHead>
                     <TableRow>

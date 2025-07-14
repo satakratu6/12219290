@@ -31,8 +31,8 @@ const StatsPage = ({ token }) => {
       <Typography variant="h4" gutterBottom sx={{ fontWeight: 700, textAlign: 'center', mb: 3 }}>
         URL Stats
       </Typography>
-      <Paper elevation={3} sx={{ p: 3, width: '100%', maxWidth: 900 }}>
-        <TableContainer>
+      <Paper elevation={3} sx={{ p: { xs: 1, md: 3 }, width: '100%', boxSizing: 'border-box' }}>
+        <TableContainer sx={{ overflowX: 'auto', width: '100%' }}>
           <Table>
             <TableHead>
               <TableRow>

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const LOGGING_URL = '/api/log';
+// const LOGGING_URL = '/api/log';
+const LOGGING_URL = 'http://localhost:5000/api/log';
 
 export const logEvent = async (stack, level, pkg, message, token) => {
   try {

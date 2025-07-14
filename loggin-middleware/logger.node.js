@@ -1,5 +1,5 @@
 // logger.node.js - Node.js compatible logger for AffordMed logging middleware
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';
 
 const LOG_ENDPOINT = "http://20.244.56.144/evaluation-service/logs";
 
@@ -37,4 +37,4 @@ async function logEvent({ token, stack, level, pkg, message }) {
   }
 }
 
-module.exports = { logEvent };
+export { logEvent };
